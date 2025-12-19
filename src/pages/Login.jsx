@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react";
 import { FaGoogle, FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext"; 
-
+console.log("Debug URL:", API_BASE_URL);
 function Login() {
   const navigate = useNavigate();
   const { loginGoogle, user } = useContext(AuthContext);

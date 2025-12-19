@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import "tailwindcss";
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn-confirm-swal {
+  background-color: #d32f2f !important; 
+  color: white !important;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background 0.2s;
+}
+
+.btn-confirm-swal:hover {
+  background-color: #b71c1c !important;
+}
+
+.btn-cancel-swal {
+  background-color: #e0e0e0 !important;
+  color: #333 !important;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-cancel-swal:hover {
+  background-color: #bdbdbd !important;
+}
+
+div:where(.swal2-icon) {
+  margin-top: 15px !important;
+}
+
+button {
+  @apply transition duration-200 ease-in-out;
+}
+
+.tooltip {
+  @apply absolute right-full top-1/2 -translate-y-1/2 mr-2 
+         px-2 py-1 rounded bg-black/70 text-white text-xs 
+         opacity-0 group-hover:opacity-100 transition;
+  white-space: nowrap;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out;
+}
+
+canvas {
+  cursor: crosshair;
+}
+canvas:active {
+  cursor: move;
+}
+
